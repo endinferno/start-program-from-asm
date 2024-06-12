@@ -4,4 +4,4 @@ all:
 	gcc -nostartfiles start.o main.o -o main
 
 clean:
-	rm start.o main.o main
+	rm -rf start.o main.o main
