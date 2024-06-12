@@ -14,8 +14,8 @@ all:
 		${OUTPUT}/start2.o ${OUTPUT}/main2.o -o ${BIN}/main2
 	echo "Compile version 3 with cpp and _start"
 	g++ -c -o ${OUTPUT}/start3.o start3.s
-	g++ -c -o ${OUTPUT}/function.o function.cpp
-	g++ -nostartfiles ${OUTPUT}/start3.o ${OUTPUT}/function.o \
+	g++ -c -o ${OUTPUT}/main3.o main.cpp
+	g++ -nostartfiles ${OUTPUT}/start3.o ${OUTPUT}/main3.o \
 		-o ${BIN}/main3
 
 clean:
