@@ -16,7 +16,7 @@ all:
 	g++ -c -o ${OUTPUT}/start3.o start3.s
 	g++ -c -o ${OUTPUT}/function.o function.cpp
 	g++ -nostartfiles ${OUTPUT}/start3.o ${OUTPUT}/function.o \
-		-o ${BIN}/main3 -Loutput -lshared_library
+		-o ${BIN}/main3
 
 clean:
 	rm -rf ${OUTPUT} ${BIN}
